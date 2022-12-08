@@ -19,10 +19,9 @@ public class OrderServiceImpl implements OrderService{
     // *** OCP 위반 -> 객체를 코드에서 직접 갈아끼우는 순간 위반!!
 //    private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 
-    private DiscountPolicy discountPolicy;
+    private final DiscountPolicy discountPolicy;
 
 
-    @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
