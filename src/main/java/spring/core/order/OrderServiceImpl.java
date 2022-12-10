@@ -23,7 +23,7 @@ public class OrderServiceImpl implements OrderService{
 
 
     // @RequiredArgsConstructor Annotation 사용 시 자동으로 생성!!
-    //    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    //    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
     //        this.memberRepository = memberRepository;
     //        this.discountPolicy = discountPolicy;
     //    }
