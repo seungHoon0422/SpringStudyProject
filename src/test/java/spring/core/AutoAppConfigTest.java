@@ -10,7 +10,7 @@ public class AutoAppConfigTest {
 
     @Test
     void basicScan() {
-        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AutoAppConfig.class);
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = ac.getBean(MemberService.class);
         OrderService orderService = ac.getBean(OrderService.class);
 
